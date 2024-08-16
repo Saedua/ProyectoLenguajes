@@ -35,8 +35,8 @@ public class Alumnos {
     @ManyToMany
     @JoinTable(
         name = "alumnos_carreras",
-        joinColumns = @JoinColumn(name = "id_alumno"),
-        inverseJoinColumns = @JoinColumn(name = "id_carrera")
+        joinColumns = @JoinColumn(name = "id_alumno", referencedColumnName = "numerocuenta"),
+        inverseJoinColumns = @JoinColumn(name = "id_carrera", referencedColumnName = "id_carrera")
     )
     private List<Carreras> carreras;
 }

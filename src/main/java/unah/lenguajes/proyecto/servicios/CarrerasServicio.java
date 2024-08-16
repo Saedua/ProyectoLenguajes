@@ -18,6 +18,9 @@ public class CarrerasServicio {
         return this.carrerasRepositorio.findAll();
     }
 
+    /*Podria cambiarse a que solo reciba el nombre ya que es la unica columna que necesita.
+     * Pero de esta forma se podria utilizar un JSON
+     */
     public Carreras crearNuevo(Carreras nvaCarrera){
         return this.carrerasRepositorio.save(nvaCarrera);
     }
