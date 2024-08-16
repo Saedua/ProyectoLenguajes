@@ -133,4 +133,14 @@ public class SeccionesServicio {
         }
     }
 
+    //DEPRECATED
+    public boolean existenSeccionesPorIds(List<Long> idsSeccion){
+        for(Long idSeccion : idsSeccion){
+            if(!this.seccionesRepositorio.existsById(idSeccion)){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
