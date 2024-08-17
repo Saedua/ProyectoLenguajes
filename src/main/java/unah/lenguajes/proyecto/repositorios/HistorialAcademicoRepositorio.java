@@ -7,6 +7,6 @@ import unah.lenguajes.proyecto.modelos.Alumnos;
 import unah.lenguajes.proyecto.modelos.HistorialAcademico;
 
 @Repository
-public interface HistorialAcademicoRepositorio extends JpaRepository<HistorialAcademico, Alumnos> {
+public interface HistorialAcademicoRepositorio extends JpaRepository<HistorialAcademico, String> {
     public HistorialAcademico findByCuentaAlumno(String cuentaAlumno);
 }
