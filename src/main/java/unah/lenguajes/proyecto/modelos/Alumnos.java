@@ -29,8 +29,6 @@ public class Alumnos {
     @Column(name="sexo")
     private char sexo;
 
-    @Column(name="foto")
-    private String foto;
 
     @ManyToMany
     @JoinTable(

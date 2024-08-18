@@ -23,7 +23,5 @@ public class Docentes {
 
     private String contrasena;
 
-    private String foto;
-
     private char sexo;
 }

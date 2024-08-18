@@ -40,9 +40,6 @@ public class AlumnosServicio {
             if(alumno.getCarreras() != null){
                 alumnoActualizar.setCarreras(alumno.getCarreras());
             }
-            if(alumno.getFoto() != null){
-                alumnoActualizar.setFoto(alumno.getFoto());
-            }
             
             return this.alumnosRepositorio.save(alumnoActualizar);
         } else{
